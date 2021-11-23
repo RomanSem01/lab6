@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Recognition</title>
+    <link rel="stylesheet" href={% static 'css/main.css' %}>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="file-uploader">
+
+                <label for="file">Upload Image</label>
+                <input type="file" id="file" onchange="showPreview(event);" name="pht">
+                <div class="preview">
+                    <img id="file-preview">
+                </div>
+                <button class="button-submit" id="button-submit">Recognize</button>
+            </div>
+        </form>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

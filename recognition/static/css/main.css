@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(155deg, rgba(2,0,36,1) 0%, rgba(43,9,14,1) 91%);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Open-Sans", sans-serif;
+    color: #fff;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Open-Sans", sans-serif;
+    color: #fff;
+}
+
+.file-uploader {
+    width: 250px;
+    padding: 20px;
+    background: #051e7a;
+    border: 2px dashed;
+}
+
+.img-container {
+    width: 250px;
+    padding: 20px;
+}
+
+.img-result {
+    width: 100%;
+}
+
+.file-uploader input {
+    display: none;
+}
+
+.file-uploader label {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.file-uploader label:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.file-uploader img {
+    width: 100%;
+    display: none;
+}
+
+.button-submit {
+    display: none;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.button-submit:disabled {
+  pointer-events: none;
+}
+
+.button-submit:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-submit:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
